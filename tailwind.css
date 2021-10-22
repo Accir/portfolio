@@ -1,0 +1,71 @@
+/* @import "tailwindcss/base";
+@import "tailwindcss/components"; */
+
+:root {
+  --bg-color: #232323;
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 19;
+}
+
+#typing {
+  position: relative;
+  width: max-content;
+}
+
+#typing::before,
+#typing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#typing::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+#typing::after {
+  width: 0.125em;
+  background: white;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.parallax {
+  background-image: url("./img/background.png");
+  min-height: 280px;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #eee;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #434343;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
