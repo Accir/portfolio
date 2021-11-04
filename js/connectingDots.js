@@ -99,5 +99,6 @@ function tick() {
   update();
   requestAnimationFrame(tick);
 }
-
-tick();
+if (canvas.width >= 640) {
+  tick();
+}

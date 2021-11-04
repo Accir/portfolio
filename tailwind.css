@@ -3,35 +3,10 @@
 
 :root {
   --bg-color: #232323;
+  --secondary-color: #6665dd;
+  --tertiary-color: #4fb477;
   --typewriterSpeed: 3s;
   --typewriterCharacters: 19;
-}
-
-#typing {
-  position: relative;
-  width: max-content;
-}
-
-#typing::before,
-#typing::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-#typing::before {
-  background: var(--bg-color);
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
-}
-
-#typing::after {
-  width: 0.125em;
-  background: white;
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
 @keyframes typewriter {
@@ -61,11 +36,89 @@
 }
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #eee;
+  /* background: #eee; */
+  background: var(--tertiary-color);
 }
 
 ::-webkit-scrollbar-track {
   background-color: #434343;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.border-tertiary {
+  border-color: var(--tertiary-color);
+}
+
+.bg-primary {
+  background-color: var(--bg-color);
+}
+
+.bg-secondary {
+  background-color: #111;
+}
+
+.project-image {
+  object-fit: cover;
+  filter: brightness(0.9);
+  width: 100%;
+  height: 400px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
+  position: relative;
+}
+
+.social-logo {
+  transition: 0.15s;
+}
+
+.social-logo:hover {
+  filter: invert(45%) sepia(28%) saturate(1100%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+
+.section-shadow {
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+@media only screen and (min-width: 640px) {
+  #typing {
+    position: relative;
+    width: max-content;
+  }
+
+  #typing::before,
+  #typing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  #typing::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+  }
+
+  #typing::after {
+    width: 0.125em;
+    background: white;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .project-header {
+    position: relative;
+    bottom: 80px;
+    transition: 0.3s ease;
+    z-index: 1;
+  }
+
+  .project:hover .project-header {
+    bottom: -20px;
+  }
 }

@@ -18,40 +18,143 @@
   </head>
   <body class="overflow-x-hidden font-main">
     <section class="h-screen bg-darkGray">
-      <canvas id="main-section" class="absolute top-0 left-0"> </canvas>
-      <div class="relative container mx-auto text-center text-white pt-12">
-        <div class="flex justify-center space-x-12">
+      <canvas id="main-section" class="absolute top-0 left-0 hidden sm:block"> </canvas>
+      <div class="relative container mx-auto text-center text-white pt-12 px-4">
+        <div class="flex justify-center space-x-12 sm:space-x-16">
           <a href="mailto:dovydas@puluikis.lt">
-            <img class="max-h-9 w-auto" src="./img/email.png" alt="E-mail logo" />
+            <img
+              class="max-h-7 sm:max-h-9 w-auto social-logo"
+              src="./img/email.png"
+              alt="E-mail logo"
+            />
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/dovydas-puluikis-b75834186/">
-            <img class="max-h-9 w-auto" src="./img/linkedin.png" alt="LinkedIn logo" />
+            <img
+              class="max-h-7 sm:max-h-9 w-auto social-logo"
+              src="./img/linkedin.png"
+              alt="LinkedIn logo"
+            />
           </a>
           <a target="_blank" href="https://github.com/accir">
-            <img class="max-h-9 w-auto" src="./img/github.png" alt="GitHub logo" />
+            <img
+              class="max-h-7 sm:max-h-9 w-auto social-logo"
+              src="./img/github.png"
+              alt="GitHub logo"
+            />
           </a>
         </div>
-        <h1 class="text-5xl mt-72 mb-7 tracking-widest">
+        <h1 class="text-4xl sm:text-5xl mt-72 mb-7 tracking-widest">
           DOVYDAS PULUIKIS
         </h1>
-        <hr class="w-6/12 mx-auto mb-9" />
+        <hr class="w-10/12 md:w-6/12 mx-auto mb-9 border-tertiary" />
         <h2 class="text-2xl tracking-widest mx-auto" id="typing">
           Front-End Developer
         </h2>
       </div>
     </section>
-    <section class="parallax">
-      <div class="container mx-auto text-center text-white filter-none">
-        <h2 class="text-5xl pt-40 pb-7 tracking-widest">ABOUT ME</h2>
-        <hr class="w-4/12 mx-auto pb-9" />
-        <p class="text-xl pt-20 pb-64 max-w-2xl mx-auto text-justify">
+    <section class="parallax section-shadow">
+      <div class="container mx-auto text-center text-white filter-none px-4">
+        <h2 class="text-4xl sm:text-5xl pt-32 sm:pt-40 pb-7 tracking-widest">ABOUT ME</h2>
+        <hr class="w-4/12 mx-auto pb-9 border-tertiary" />
+        <p class="text-base sm:text-xl pt-20 pb-64 max-w-2xl mx-auto text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae lobortis massa. Morbi
           vitae fermentum justo. Quisque quam sem, auctor sit amet egestas vitae, laoreet vulputate
           lectus.
         </p>
       </div>
     </section>
-    <section class="pt-80"></section>
+    <section class="bg-primary">
+      <div class="container mx-auto text-center text-white filter-none px-4">
+        <h2 class="text-4xl sm:text-5xl pt-32 sm:pt-40 pb-7 tracking-widest">PROJECTS</h2>
+        <hr class="w-4/12 mx-auto pb-9 border-tertiary mb-20" />
+        <div>
+          <div class="project-wrapper grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-16 pb-20">
+            <div class="project">
+              <a target="_blank" href="https://creditking.lt/">
+                <img
+                  class="project-image object-center"
+                  src="img/project_1.png"
+                  alt="Credit King"
+                />
+                <h3 class="project-header text-xl sm:text-2xl text-center pt-5 lg:pt-0">
+                  Credit King
+                </h3>
+              </a>
+            </div>
+            <div class="project">
+              <a target="_blank" href="http://justiniskiuodontologija.lt/">
+                <img
+                  class="project-image object-right"
+                  src="img/project_2.png"
+                  alt="Justiniškių odontologija"
+                />
+                <h3 class="project-header text-xl sm:text-2xl text-center pt-5 lg:pt-0">
+                  Justiniškių odontologija
+                </h3>
+              </a>
+            </div>
+
+            <div class="project">
+              <a target="_blank" href="https://tok.lt/">
+                <img
+                  class="project-image object-right"
+                  src="img/project_3.png"
+                  alt="Tilto odontologijos klinika"
+                />
+                <h3 class="project-header text-xl sm:text-2xl text-center pt-5 lg:pt-0">
+                  Tilto odontologijos klinika
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-secondary section-shadow">
+      <div class="container mx-auto text-white px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 pt-10">
+          <div>
+            <div class="text-2xl lg:text-4xl pb-2">
+              Dovydas Puluikis
+            </div>
+            <div class="text-base lg:text-xl">
+              Front-End Developer
+            </div>
+          </div>
+          <div>
+            <div class="text-xl lg:text-2xl pb-5 pt-10 md:pt-0">
+              Interested in working together?
+            </div>
+            <div class="flex items-center space-x-12">
+              <a href="mailto:dovydas@puluikis.lt">
+                <img
+                  class="max-h-5 lg:max-h-7 w-auto social-logo"
+                  src="./img/email.png"
+                  alt="E-mail logo"
+                />
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/dovydas-puluikis-b75834186/">
+                <img
+                  class="max-h-6 lg:max-h-8 w-auto social-logo"
+                  src="./img/linkedin.png"
+                  alt="LinkedIn logo"
+                />
+              </a>
+              <a target="_blank" href="https://github.com/accir">
+                <img
+                  class="max-h-6 lg:max-h-8 w-auto social-logo"
+                  src="./img/github.png"
+                  alt="GitHub logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pb-4 text-xs text-right pt-10 lg:pt-0">
+          © 2021 - Dovydas Puluikis<br />dovydas.puluikis.lt
+        </div>
+      </div>
+    </section>
   </body>
   <script src="./js/connectingDots.js"></script>
 </html>
