@@ -23,14 +23,14 @@
 }
 
 .parallax {
-  background-image: url("./img/background.png");
+  background-image: url("./img/background.webp");
   min-height: 280px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
@@ -43,7 +43,7 @@
   background-color: #434343;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .border-tertiary {
   border-color: var(--tertiary-color);
