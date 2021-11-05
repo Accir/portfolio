@@ -1,5 +1,6 @@
-/* @import "tailwindcss/base";
-@import "tailwindcss/components"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --bg-color: #232323;
@@ -25,7 +26,6 @@
   background-image: url("./img/background.png");
   min-height: 280px;
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -36,7 +36,6 @@
 }
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  /* background: #eee; */
   background: var(--tertiary-color);
 }
 

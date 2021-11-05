@@ -4,9 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.3.7",
+    "cssnano": "^5.0.9",
+    "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
-    "tailwindcss": "^2.2.17"
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.19"
   },
   "scripts": {
     "tailwind:build": "postcss ./tailwind.css -o ./style.css"
